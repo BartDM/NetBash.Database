@@ -41,7 +41,7 @@ namespace NetBash.Database
                 { "cn|connectionstring","Returns the connectionstring name that will be used", 
                     v=>_command=Command.ConnectionStringName},
 
-                { "lcn|listcn","Shows all connectionstring names found",
+                { "lcn|listcn","List all connectionstrings found in the config file",
                     v=>_command = Command.ListConnectionStrings},
 
                 { "c=|conn=", "Name of connection string to use (defaults to first found)",
