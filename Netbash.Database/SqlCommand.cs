@@ -214,7 +214,10 @@ namespace NetBash.Database
             var connString = getConnectionString();
 
             var connection = new SqlConnection(connString);
-
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
             return connection;
         }
 
